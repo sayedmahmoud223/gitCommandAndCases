@@ -1,17 +1,34 @@
+To understand the commands with graphics, go to this link => https://marklodato.github.io/visual-git-guide/index-en.html
 
-** git status -s(for abbreviation) => Shows untracked or modified files.
 
-** git diff => shows difference between working tree and stageing area
+** git status -s(for abbreviation or oneLine) => Shows untracked or modified files.
+
+** git diff => shows difference between working tree and stageing area (index)
 
 ** git add . => Stages all new and modified files for commit.
 
-** git rm --cached => for removing from stageing area and make it untracked
+** git diff --staged => shows difference between stageing area and repo
+
+** git diff af45856..cd59856 => shows difference between to commits
+
+** git rm --cached <file-name> => for removing from stageing area and make it untracked
+
+** git restore <file-name> => if you add somthing to your file (working tree) and want to return to the last thing you stage it (from statging area)
+
+** git restore --staged <file-name> => if you add somthing to your file (working tree) and added to (stage area) and want to remove the last added to stage area
+* git restore <file-name> => if you add somthing to your file (working tree) and want to return to the last thing you stage it (from statging area)
 
 ** git commit -m "message" => Commits staged changes to the local repository.
 
 ** git commit -am "message" => Stages and commits changes for tracked files in one step.
 
 ** git log --oneline => Displays all commits in the current branch in a single-line format.
+
+** git log --oneline (add filter) => Displays all commits in the current branch in a single-line format and return commits accoreding to filer you added.
+* can return last 2 commits => -2
+* can return specific user commits => --author="User Name", --author="user@example.com"
+* can return specific file committed on it => "file.text"
+* can return commits as a graph => --graph
 
 ** git branch => Lists all branches and indicates the current branch (HEAD).
 
