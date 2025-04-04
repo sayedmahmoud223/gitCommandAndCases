@@ -30,6 +30,14 @@ To understand the commands with graphics, go to this link => https://marklodato.
 * can return specific file committed on it => "file.text"
 * can return commits as a graph => --graph
 
+** git reset head~1,2,3 => to make head point to another commit but without change in working tree
+* head~1 => backforward one commit
+* head~2 => backforward two commit
+
+** git reset head~1,2,3 --hard => to make head point to another commit but change in working tree
+
+** git reflog => to show all about what the head pointer point now and before and use it when need to see how change the head
+
 ** git branch => Lists all branches and indicates the current branch (HEAD).
 
 ** git branch <branch-name> => Creates a new branch.
