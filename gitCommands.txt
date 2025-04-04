@@ -1,0 +1,55 @@
+
+** git status -s(for abbreviation) => Shows untracked or modified files.
+
+** git add . => Stages all new and modified files for commit.
+
+** git rm --cached => for removing from stageing area and make it untracked
+
+** git commit -m "message" => Commits staged changes to the local repository.
+
+** git commit -am "message" => Stages and commits changes for tracked files in one step.
+
+** git log --oneline => Displays all commits in the current branch in a single-line format.
+
+** git branch => Lists all branches and indicates the current branch (HEAD).
+
+** git branch <branch-name> => Creates a new branch.
+
+** git branch -d <branch-name> => to delete the branch from local
+
+** git push origin -d <branch-name> => to delete the branch from remote repo
+
+** git switch <branch-name> => Switches to an existing branch.
+
+** git switch -c <branch-name> => Creates a new branch and switches to it.
+
+** git remote add origin <URL> => Connects the local repository to a remote repository and assigns it the name origin.
+
+** git push origin master => Pushes all commits from the local master branch to the remote repository.
+
+** git push origin <Branch-Name> => Pushes all commits from the local <Branch-Name> to the remote repository.
+
+
+
+// case one
+
+If someone else modifies the same line in a file you’re working on, a conflict will occur when merging branches. To resolve it:
+
+1-Switch to your branch (not the main branch).
+
+2-Merge the main branch into your branch.
+
+3-Resolve the conflict.
+
+4-Commit the resolved changes.
+
+5-Switch to the main branch.
+
+6-Merge your branch into the main branch again.
+
+
+
+// case two
+
+If someone modifies files in the main branch but hasn't committed the changes, an error will occur when switching to another branch.
+✅ Solution: Commit or stash the changes in the main branch before switching.
