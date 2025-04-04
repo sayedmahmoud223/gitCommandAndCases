@@ -1,6 +1,8 @@
 
 ** git status -s(for abbreviation) => Shows untracked or modified files.
 
+** git diff => shows difference between working tree and stageing area
+
 ** git add . => Stages all new and modified files for commit.
 
 ** git rm --cached => for removing from stageing area and make it untracked
